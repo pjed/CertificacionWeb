@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Plantilla Canvas</title>
+</head>
+
+<body>
+    <canvas id="canvasLineas" style="width: 200px; height: 200px; border: 2px solid black;">
+    </canvas>
+
+    <canvas id="canvasGradiente1" style="width: 200px; height: 200px; border: 2px solid black;">
+    </canvas>
+
+    <canvas id="canvasGradiente2" style="width: 200px; height: 200px; border: 2px solid black;">
+    </canvas>
+    
+
+    <canvas id="canvasTexto" style="width: 200px; height: 200px; border: 2px solid black;">
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("canvasLineas");
+        var ctx = canvas.getContext("2d");
+
+        ctx.moveTo(0, 0);
+        ctx.fillStyle = "#FFFFFF";
+        ctx.fillRect(0, 0, 300, 300);
+        ctx.lineTo(300, 150);
+        ctx.stroke();
+
+        ctx.moveTo(0, 0);
+        ctx.fillStyle = "#FFFFFF";
+        ctx.fillRect(0, 0, 300, 300);
+        ctx.lineTo(200, 150);
+        ctx.stroke();
+
+        ctx.moveTo(0, 0);
+        ctx.fillStyle = "#FFFFFF";
+        ctx.fillRect(0, 0, 300, 300);
+        ctx.lineTo(100, 150);
+        ctx.stroke();
+
+        
+        var canvas = document.getElementById("canvasGradiente1");
+        var ctx = canvas.getContext("2d");
+
+        // Create gradient
+        var grd = ctx.createLinearGradient(0, 0, 250, 150);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 200, 200);
+
+        var canvas = document.getElementById("canvasGradiente2");
+        var ctx = canvas.getContext("2d");
+
+        // Create gradient
+        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grd.addColorStop(0, "blue");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 150);
+
+
+        var canvas = document.getElementById("canvasTexto");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "40px Arial";
+        ctx.fillText("Hola mundo", 50, 50);
+
+    </script>
+</body>
+
+</html>
