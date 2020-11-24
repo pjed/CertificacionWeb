@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro Sencillo</title>
+</head>
+
+<body>
+    <form name="formularioRegistro" action="#">
+        <p>
+            <label for="correoElectronico">
+                Correo Electrónico:
+            </label>
+            <input type="email" name="email" id="correoElectronico" placeholder="correo@dominio.com">
+        </p>
+        <p>
+            <label for="nombreUsuario">
+                Nombre:
+            </label>
+            <input type="text" name="nombre" id="nombreUsuario" placeholder="Escribe tu nombre">
+        </p>
+        <p>
+            <label for="apellidosUsuario">
+                Apellidos:
+            </label>
+            <input type="text" name="apellidos" id="apellidosUsuario" placeholder="Escribe tu apellido">
+        </p>
+        <p>
+            <label for="passwordUsuario">
+                Password:
+            </label>
+            <input type="password" name="pass" id="passwordUsuario" placeholder="Escribe una contraseña">
+        </p>
+        <p>
+            <label for="direccionUsuario">
+                Dirección:
+            </label>
+            <input type="text" name="direccion" id="direccionUsuario" placeholder="Escribe una dirección">
+        </p>
+        <p>
+            <label for="poblacionUsuario">
+                Población:
+            </label>
+            <input type="text" name="poblacion" id="poblacionUsuario" placeholder="Población">
+        </p>
+        <p>
+            <label for="provinciaUsuario">
+                Provincia:
+            </label>
+            <input type="text" name="provincia" id="provinciaUsuario" placeholder="Provincia">
+        </p>
+        <p>
+            <label for="fechaNacimiento">
+                Fecha de Nacimiento:
+            </label>
+            <input type="date" name="nacimiento" id="fechaNacimiento">
+        </p>
+        <p>
+            <label for="urlNegocio">
+                URL Negocio:
+            </label>
+            <input type="url" name="url" id="urlNegocio" placeholder="http://www.tupaginaweb.com">
+        </p>
+        <p>
+            <label for="colorFavorito">
+                Color Favorito:
+            </label>
+            <input type="color" name="color" id="colorFavorito">
+        </p>
+        <p>
+            <label for="avatar">
+                Avatar:
+            </label>
+            <input type="file" name="avatar" id="avatar" accept="image/*">
+        </p>
+        <p>
+            <label for="dni">
+                DNI:
+            </label>
+            <input type="text" name="dni" id="dni" pattern="[0-9]{7}[a-zA-Z]{1}" minlength="8" maxlength="8">
+        </p>
+        <p>
+            <input type="submit" name="enviar" id="enviar" value="Enviar Datos">
+        </p>
+    </form>
+</body>
+
+</html>
