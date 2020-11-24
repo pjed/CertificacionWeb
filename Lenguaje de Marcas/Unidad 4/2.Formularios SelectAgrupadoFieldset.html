@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro Sencillo con agrupacion de select y fieldset</title>
+    <style>
+        .content {
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        .content form,
+        ul {
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        fieldset {
+            width: 300px;
+            display: inline;
+        }
+
+        body{
+            display: inline;
+        }
+        .izda{
+            float: left;
+            width: 200px;
+        }
+        .derecha{
+            float: right;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <form name="formularioRegistro" action="#">
+            <h1>Formulario de Registro Sencillo con agrupacion de select</h1>
+            <div id="izda">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>
+                        <label for="nombreUsuario">Nombre:</label>
+                        <input type="text" name="nombre" id="nombreUsuario" placeholder="Escribe tu nombre">
+                    </p>
+                    <p>
+                        <label for="apellidosUsuario">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidosUsuario" placeholder="Escribe tu apellido">
+                    </p>
+                    <p>
+
+                        <label for="dni">DNI:</label>
+                        <input type="text" name="dni" id="dni" pattern="[0-9]{7}[a-zA-Z]{1}" minlength="8" maxlength="8"
+                            required>
+                    </p>
+                    <p>
+                        <label for="direccionUsuario">Dirección:</label>
+                        <input type="text" name="direccion" id="direccionUsuario" placeholder="Escribe una dirección">
+                    </p>
+                    <p>
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" name="nacimiento" id="fechaNacimiento">
+                    </p>
+                    <p>
+
+                        <label for="poblacionUsuario">Población:</label>
+                        <select>
+                            <option value="--">--- Seleccione una opción ---</option>
+                            <optgroup label="Ciudad Real">
+                                <option value="cr">Ciudad Real</option>
+                                <option value="pu">Puertollano</option>
+                                <option value="ac">Argamasilla de Calatrava</option>
+                            </optgroup>
+                            <optgroup label="Albacete">
+                                <option value="ab">Albacete</option>
+                                <option value="he">Hellin</option>
+                                <option value="ph">Pozohondo</option>
+                            </optgroup>
+                            <optgroup label="Toledo">
+                                <option value="ta">Talavera de la Reina</option>
+                                <option value="to">Toledo</option>
+                                <option value="so">Sonseca</option>
+                            </optgroup>
+                            <optgroup label="Cuenca">
+                                <option value="cu">Cuenca</option>
+                                <option value="ar">Arcas</option>
+                                <option value="to">Tortola</option>
+                            </optgroup>
+                            <optgroup label="Guadalajara">
+                                <option value="gu">Guadalajara</option>
+                                <option value="al">Alovera</option>
+                                <option value="ta">Taracena</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="provinciaUsuario">Provincia:</label>
+                        <input type="text" name="provincia" id="provinciaUsuario" placeholder="Provincia">
+                    </p>
+                    <p>
+
+                        <label for="urlNegocio">URL Negocio:</label>
+                        <input type="url" name="url" id="urlNegocio" placeholder="http://www.tupaginaweb.com" required>
+                    </p>
+                </fieldset>
+            </div>
+            <br>
+            <div id="derecha">
+                <fieldset>
+                    <legend>Datos de Usuario</legend>
+                    <p>
+                        <label for="correoElectronico">Correo Electrónico:</label>
+                        <input type="email" name="email" id="correoElectronico" placeholder="correo@dominio.com"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </p>
+                    <p>
+                        <label for="passwordUsuario">Password:</label>
+                        <input type="password" name="pass" id="passwordUsuario" placeholder="Escribe una contraseña"
+                            required>
+                    </p>
+                    <p>
+                        <label for="colorFavorito">Color Favorito:</label>
+                        <input type="color" name="color" id="colorFavorito">
+                    </p>
+                    <p>
+                        <label for="avatar">Avatar:</label>
+                        <input type="file" name="avatar" id="avatar" accept=".jpeg, .png">
+                    </p>
+                </fieldset>
+            </div>
+            <br>
+            <input type="submit" name="enviar" id="enviar" value="Enviar Datos">
+        </form>
+    </div>
+</body>
+
+</html>
