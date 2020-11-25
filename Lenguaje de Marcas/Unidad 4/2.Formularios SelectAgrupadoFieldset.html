@@ -52,7 +52,12 @@
                         <input type="text" name="apellidos" id="apellidosUsuario" placeholder="Escribe tu apellido">
                     </p>
                     <p>
-
+                        <label for="hombre">Sexo Hombre</label>
+                        <input type="radio" name="sexo" id="hombre">
+                        <label for="mujer">Sexo Mujer</label>
+                        <input type="radio" name="sexo" id="mujer">
+                    </p>
+                    <p>
                         <label for="dni">DNI:</label>
                         <input type="text" name="dni" id="dni" pattern="[0-9]{7}[a-zA-Z]{1}" minlength="8" maxlength="8"
                             required>
@@ -68,7 +73,7 @@
                     <p>
 
                         <label for="poblacionUsuario">Población:</label>
-                        <select>
+                        <select id="poblacionUsuario">
                             <option value="--">--- Seleccione una opción ---</option>
                             <optgroup label="Ciudad Real">
                                 <option value="cr">Ciudad Real</option>
@@ -99,12 +104,22 @@
                     </p>
                     <p>
                         <label for="provinciaUsuario">Provincia:</label>
-                        <input type="text" name="provincia" id="provinciaUsuario" placeholder="Provincia">
+                        <select id="provinciaUsuario">
+                            <option value="cr">Ciudad Real</option>
+                            <option value="ab">Albacete</option>
+                            <option value="to">Toledo</option>
+                            <option value="gu">Guadalajara</option>
+                            <option value="cu">Cuenca</option>
+                            <option value="gu">Guadalajara</option>
+                        </select>
                     </p>
                     <p>
-
                         <label for="urlNegocio">URL Negocio:</label>
                         <input type="url" name="url" id="urlNegocio" placeholder="http://www.tupaginaweb.com" required>
+                    </p>
+                    <p>
+                        <label for="otrosDatos">Otros datos de interés: </label>
+                        <textarea cols="40" name="otrosDatos" id="otrosDatos" placeholder="Escribe aquí lo que quieras"></textarea>
                     </p>
                 </fieldset>
             </div>
