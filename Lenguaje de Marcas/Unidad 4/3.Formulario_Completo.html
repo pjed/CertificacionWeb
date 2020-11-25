@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        legend {
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        fieldset {
+            background-color: #bbbbbb;
+        }
+/*
+        input[type=text]{
+            width: 96%;
+        }
+
+        input[type=date]{
+            width: 96%;
+        }
+*/
+
+        .select{
+            width: 96%;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HOJA DE INSCRIPCIÓN <BR> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h1>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <table>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="nombre">
+                                Nombre:
+                            </label><br>
+                            <input type="text" id="nombre" required placeholder="Nombre">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <label for="apellidos">
+                                Apellidos:
+                            </label><br>
+                            <input type="text" id="apellidos" required placeholder="Apellidos">
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <label for="dni">
+                                DNI:
+                            </label><br>
+                            <input type="text" id="dni" required placeholder="12345678X" pattern="[0-9]{7}[A-Z]{1}" maxlength="8">
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="localidad">
+                            Localidad de Nacimiento:
+                        </label><br>
+                        <input type="text" id="Localidad" placeholder="Localidad de Nacimiento">
+                    </td>
+                    <td>
+                        <label for="provincia">
+                            Provincia:
+                        </label><br>
+                        <select class="select">
+                            <option value="cr">Ciudad Real</option>
+                            <option value="to">Toledo</option>
+                            <option value="al">Albacete</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="provincia">
+                            Fecha de Nacimiento:
+                        </label><br>
+                        <input type="date" id="fechaNacimiento">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="direccion">
+                            Dirección:
+                        </label><br>
+                        <select required>
+                            <option value="#" selected>--Seleccione una opcion--</option>
+                            <option value="avda">Avda</option>
+                            <option value="c">Calle</option>
+                            <option value="r">Ronda</option>
+                        </select>
+                        <input type="text" id="direccion" placeholder="Direccion">
+                    </td>
+                    <td>
+                        <label for="cp">
+                            Código Postal:
+                        </label><br>
+                        <input type="text" id="cp" pattern="\d*" maxlength="5" placeholder="12345">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Forma de Acceso</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="directo" name="forma"><label for="directo">Directo</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="directo" id="bachillerato"><label for="bachillerato">Bachillerato Log Modalidad:&nbsp;&nbsp;</label><input type="text" id="modalidad" name="modalidad">
+                        </li>
+                        <li>
+                            <input type="radio" name="directo" id="experimental"><label for="experimental">Experimental</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="directo" id="cou"><label for="cou">COU Opción:&nbsp;</label><input type="text" id="opcion" name="opcion">
+                        </li>
+                        <li>
+                            <input type="radio" name="directo" id="fp2"><label for="fp2">FP2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="directo" id="otros"><label for="otros">Otros (especifique):&nbsp;&nbsp;</label><input type="text" id="especifique" name="especifique">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="radio" id="libre" name="forma"><label for="libre">Prueba Libre</label>   
+                </li>
+            </ul>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Documentos Adjuntados</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="fotoDNI"><label for="fotoDNI">Fotocopia DNI</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="certAcademico"><label for="certAcademico">Certificado Académico</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="otrosDocu" id="otrosDocu"><label for="otrosDocu">Otros documentos (especifique):&nbsp;&nbsp;</label>
+                    </td>
+                    <td>
+                        <input type="text" id="txtDocumento" name="txtDocumento">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Solicitud">
+    </form>
+</body>
+
+</html>
