@@ -73,13 +73,13 @@
                         <label for="localidad">
                             Localidad de Nacimiento:
                         </label><br>
-                        <input type="text" id="Localidad" placeholder="Localidad de Nacimiento">
+                        <input type="text" id="localidad" placeholder="Localidad de Nacimiento">
                     </td>
                     <td>
                         <label for="provincia">
                             Provincia:
                         </label><br>
-                        <select class="select">
+                        <select id="provincia" class="select">
                             <option value="cr">Ciudad Real</option>
                             <option value="to">Toledo</option>
                             <option value="al">Albacete</option>
@@ -98,7 +98,7 @@
                             Dirección:
                         </label><br>
                         <select required>
-                            <option value="#" selected>--Seleccione una opcion--</option>
+                            <option value="" selected>--Seleccione una opcion--</option>
                             <option value="avda">Avda</option>
                             <option value="c">Calle</option>
                             <option value="r">Ronda</option>
@@ -149,10 +149,10 @@
             <table>
                 <tr>
                     <td>
-                        <input type="checkbox" name="fotoDNI"><label for="fotoDNI">Fotocopia DNI</label>
+                        <input type="checkbox" id="fotoDNI"><label for="fotoDNI">Fotocopia DNI</label>
                     </td>
                     <td>
-                        <input type="checkbox" name="certAcademico"><label for="certAcademico">Certificado Académico</label>
+                        <input type="checkbox" id="certAcademico"><label for="certAcademico">Certificado Académico</label>
                     </td>
                 </tr>
                 <tr>
