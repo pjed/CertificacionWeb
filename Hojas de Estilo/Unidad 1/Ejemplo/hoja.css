@@ -1,0 +1,28 @@
+/*div {
+    color:blue;
+}*/
+
+/*.main-list {
+    border: 1rem solid #000;
+    color: red;
+    font-family: Verdana;
+  }
+  
+ .sub-list {
+    border: inherit;
+  }*/
+
+  h1 {
+    color: blue;
+  }
+  
+  div {
+    border: 1rem solid #000;
+    color: red;
+    font-family: Verdana;
+    margin-bottom: 10px;
+  }
+  
+  .berries h1 {
+    color: initial;
+  }
