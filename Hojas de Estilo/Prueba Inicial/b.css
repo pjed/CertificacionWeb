@@ -1,0 +1,15 @@
+/* CSS styles */
+.titulo {
+    background-color: grey;
+    font-size: 22pt;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .fondo{
+    background-color: lightgray;
+  }
+  .sangria{
+    text-indent: 40px;
+  }
+            
