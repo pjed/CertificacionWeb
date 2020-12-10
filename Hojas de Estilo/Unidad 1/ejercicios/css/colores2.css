@@ -1,0 +1,29 @@
+/* selector universal*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* selector de etiqueta */
+h1, h2{
+    background-color: yellow;
+}
+p{
+    border: 5px solid greenyellow;
+    color: blue;
+}
+
+/* selector de clase */
+.cabecera{
+    border: 5px red solid;
+}
+
+/* selector de identificador */
+#parrafo2{
+    border: 5px blue dotted;
+}
+
+/* selector de clase descendente */
+div p span{
+    color: orange;
+}

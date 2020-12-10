@@ -1,0 +1,25 @@
+p{
+    background-color: green;
+    color: white;
+}
+
+a{
+    color: rgb(255,192,203);
+}
+
+h1{
+    color: #ffdb00;
+}
+
+h2{
+    color: rgba(255, 0, 0,0.5);
+}
+
+span{
+    background-color: hsl(55, 100%, 14%);
+    color: white;
+}
+
+h3{
+    background-color: hsla(248, 53%, 58%, 0.8);
+}
