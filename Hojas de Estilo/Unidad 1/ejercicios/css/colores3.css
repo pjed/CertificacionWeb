@@ -1,0 +1,42 @@
+table, td, tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.teal{
+    color: teal;
+}
+.red{
+    color: red;
+}
+
+.red_fondo{
+    background-color: red;
+}
+
+.green_fondo{
+    background-color: green;
+}
+
+.blue{
+    color: blue;
+}
+
+.orange{
+    color: orange;
+}
+
+.purple{
+    color: purple;
+}
+
+.olive{
+    color: olive;
+}
+
+.fuchsia{
+    color: fuchsia;
+}
+
+.green{
+    color: green;
+}

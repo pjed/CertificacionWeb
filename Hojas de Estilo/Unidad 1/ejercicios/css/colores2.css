@@ -27,3 +27,8 @@ p{
 div p span{
     color: orange;
 }
+
+/* selector de clase combinado*/
+div .ejclase span{
+    background-color: purple;
+}
