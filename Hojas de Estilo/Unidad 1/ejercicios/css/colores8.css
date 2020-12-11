@@ -1,0 +1,15 @@
+.especial {
+  border: blue 3px solid;
+}
+
+.destacado {
+  background-color: pink;
+}
+
+.error {
+  color: red;
+}
+
+.error.destacado{
+  font-size: large;
+}
