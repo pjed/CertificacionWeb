@@ -1,0 +1,9 @@
+/* Selector hijo */
+p > span{
+  color: red;
+}
+
+input+span{
+  background-color: red;;
+  color: white;
+}
