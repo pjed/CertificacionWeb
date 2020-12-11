@@ -1,0 +1,20 @@
+h1, h2, h3, p{
+    border: 1px solid red;
+    background-color: blue;
+}
+
+h1{
+ color: white;   
+}
+
+h2{
+    color: red;   
+}
+
+h3{
+    color: green;   
+}
+
+p{
+    color: yellow;   
+}

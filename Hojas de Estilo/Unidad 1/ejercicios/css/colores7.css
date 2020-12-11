@@ -1,0 +1,11 @@
+h1, span{
+    color: green;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
