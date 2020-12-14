@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'drift';
+    src: url('../fuentes/drift___-webfont.woff')format('woff'),
+    url('../fuentes/drift___-webfont.woff2')format('woff2');
+}
+
+p{
+    font-family: 'drift';
+}
