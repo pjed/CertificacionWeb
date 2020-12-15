@@ -1,35 +1,35 @@
-.infancia{
-color: ;
-font-family: ;
-font-style: italic;
+
+body {
+  background-color: #2d8652;
 }
 
-.animales{
-color:;
-font-style: ;
+h1 {
+  font-size: 55px;
+  text-transform: capitalize;
 }
 
-.literatura{
-color: ;
-font-style: ;
-font-size: ;
+p {
+  font-size: 25px;
 }
 
-.numeros{
-color: ;
-font-family: ;
+.infancia {
+  color: white;
+  font-family: serif;
+  font-style: italic;
 }
 
-body{
-  background-color: ;
-  font-family: ;
+.animales {
+  color: #FFDFB3;
+  font-family: sans-serif;
 }
 
-h1{
-font-size: ;
-text-transform: ;
+.literatura {
+  font-family: monospace;
+  color: #FF9F1A;
+  font-size: x-large;
 }
 
-p{
-font-size: ;
+.numeros {
+  font-family: cursive;
+  color: #C92A4D;
 }
