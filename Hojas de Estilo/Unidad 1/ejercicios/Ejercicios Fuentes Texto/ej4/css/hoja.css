@@ -1,0 +1,39 @@
+body{
+  background-color: #eeeeee;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p{
+  background-color: #cccccc;
+  word-spacing: 3px;
+  font-size: 18px;
+}
+
+h2{
+  background-color: #888888;
+  color: red;
+  text-transform: capitalize;
+}
+
+em{
+  color: blue;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
+strong{
+  color: green;
+}
+
+h3{
+  color: purple;
+  background-color: #CCCCCC;
+}
+
+address{
+  text-align: right;
+}

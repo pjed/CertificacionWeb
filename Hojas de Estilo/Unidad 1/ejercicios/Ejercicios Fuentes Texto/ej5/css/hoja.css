@@ -1,0 +1,44 @@
+body{
+  /*text-align: right;*/
+  background-color: #c6d9ee;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+}
+
+h1{
+  font-size: 50px;
+  text-align: right;
+}
+
+h2{
+  font-family: "Comic Sans MS", "Comic Sans", monospace;
+  font-size: 40px;
+  font-variant: small-caps;
+}
+
+p{
+  line-height: 30px;
+  text-indent: 50px;
+}
+
+strong{
+  color: #D2691E;
+}
+
+em{
+  background-color: white;
+  color: green;
+}
+
+span{
+  color: red;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+time{
+  color: #E7AC63;
+}
+
+address{
+  font-size: 14px;
+  text-align: center;
+}
