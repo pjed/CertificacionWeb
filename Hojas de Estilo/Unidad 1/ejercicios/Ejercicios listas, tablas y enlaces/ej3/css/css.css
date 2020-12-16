@@ -1,0 +1,24 @@
+caption {
+  border: 5px double blue;
+}
+
+table,
+th {
+  border: 3px dotted black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 7px;
+}
+
+td:first-child {
+  color: yellow;
+  background: #6495ed;
+  border: 3px dotted black;
+}
+
+
+td {
+  border: 3px solid black;
+  width: 150px;
+  background: #ed8f63;
+}

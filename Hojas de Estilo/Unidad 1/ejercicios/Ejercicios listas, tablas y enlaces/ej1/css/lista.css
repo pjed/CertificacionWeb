@@ -1,0 +1,23 @@
+.lista_noelemento{
+    list-style-type: none;
+}
+
+.lista_circulos{
+    list-style-type: circle;
+}
+
+.lista_cuadrados{
+    list-style-type: square;
+}
+
+.lista_romanos{
+    list-style-type: lower-roman;
+}
+
+.lista_griegos{
+    list-style-type: lower-greek;
+}
+
+.lista_imagen{
+    list-style-image: url('../img/icon.jpg');
+}
