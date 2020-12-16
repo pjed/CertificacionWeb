@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 @font-face {
   font-family: "Ribeye Marrow";
   src: url("../../fuentes/ribeyemarrow-regular-webfont.woff") format("woff"),
@@ -59,6 +61,15 @@ p.espanol {
   text-align: right;
 }
 
+p.otraletra_espanol {
+  margin: 0;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  text-align: right;
+}
+
 .intro {
   margin-left: 30%;
   margin-right: 30%;
@@ -73,3 +84,8 @@ p.espanol {
   text-align: right;
   font-family: "Just Another Hand", cursive;
 }
+
+.otraletra_espanol{
+  text-align: right;
+}
+

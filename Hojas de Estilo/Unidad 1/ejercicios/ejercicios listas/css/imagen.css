@@ -1,0 +1,9 @@
+/* CSS styles */
+h1 {
+  font-family: Impact, sans-serif;
+  color: #ce5937;
+}
+
+ul {
+  list-style-image: url("../img/icon.jpg");
+}
