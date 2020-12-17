@@ -1,0 +1,26 @@
+table{
+    width: 500px;
+    background-color: #EAF2D3;
+}
+thead{
+    background-color: #A7C942;
+    color: white;
+    text-align: right;
+}
+
+.ultima{
+    text-align: center;
+}
+
+tr:nth-child(3){
+    background-color: white;
+}
+
+.blanco{
+    background-color: white;
+}
+
+tr:hover{
+    background-color: black;
+    color: white;
+}

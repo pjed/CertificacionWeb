@@ -1,0 +1,28 @@
+table,td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+img{
+    width: 15px;
+    height: 15px;
+}
+
+th{
+    background-color: lightgray;
+    text-align: center;
+}
+
+td:nth-child(1){
+    background-color: #E7F7FF;
+}
+
+tr:nth-child(1){
+    background-color: #FFFFCE;
+}
+
+
+tr:nth-child(3){
+    background-color: #FFFFCE;
+}
