@@ -1,0 +1,35 @@
+p.none{
+    border: none;
+}
+
+p.dotted{
+    border: 5px dotted black;
+}
+
+p.dashed{
+    border: 5px dashed black;
+}
+
+p.solid{
+    border: 5px solid black;
+}
+
+p.double{
+    border: 5px double black;
+}
+
+p.groove{
+    border: 5px solid green;
+}
+
+p.ridge{
+    border: 5px ridge green;
+}
+
+p.inset{
+    border: 5px inset green;
+}
+
+p.outset{
+    border: 5px outset green;
+}

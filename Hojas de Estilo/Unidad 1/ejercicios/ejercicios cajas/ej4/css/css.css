@@ -1,0 +1,30 @@
+p.none{
+    border: 5px solid;
+    border-color: red black black black;
+}
+
+p.dotted{
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    border-left: 10px solid;
+}
+
+p.dashed{
+    border: 5px solid blue;
+}
+
+p.solid{
+    border: 5px solid;
+    border-color: red blue red blue;
+}
+
+p.double{
+    border: 5px solid;
+    border-color: red green blue green;
+}
+
+p.groove{
+    border: 5px solid;
+    border-color: red green blue violet ;
+}
