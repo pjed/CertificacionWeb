@@ -1,0 +1,36 @@
+p{
+    border: 2px solid red;
+    margin: 20px;
+}
+
+p.dotted{
+    outline: 2px dotted black;
+}
+
+p.dashed{
+    outline: 2px dashed black;
+}
+
+p.solid{
+    outline: 2px solid black;
+}
+
+p.double{
+    outline: 5px double black;
+}
+
+p.groove{
+    outline: 5px groove black;
+}
+
+p.ridge{
+    outline: 5px ridge black;
+}
+
+p.inset{
+    outline: 5px inset black;
+}
+
+p.outset{
+    outline: 5px outset black;
+}
