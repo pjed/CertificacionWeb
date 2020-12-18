@@ -1,3 +1,6 @@
+caption{
+    caption-side: bottom;
+}
 table{
     width: 500px;
     background-color: #EAF2D3;
