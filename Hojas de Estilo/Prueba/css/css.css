@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'hanalei_fillregular';
+    src: url('../fuentes/hanaleifill-regular-webfont.woff') format('woff'),
+         url('../fuentes/hanaleifill-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color: #F0E68C;
+    background-image: url('../img/hoja.jpg');
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: 150px;
+}
+
+h1{
+    color: #C02D2D;
+    text-shadow: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 40px #C02D2D;
+}
+
+p.titulo_parrafo{
+    background-color: #F4A460;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: white 5px double;
+    padding: 5px;
+}
+
+p.titulo_parrafo::first-letter{
+    color: white;
+    font-size: 32px;
+}
+
+.lista_square{
+    list-style-type: square;
+}
+
+.lista_letras{
+    list-style-type: lower-alpha;
+}
+
+.lista_menu{
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 100px;
+    width: 100%;
+    margin-left: 33%;
+}
+.lista_item{
+    background-color: #808000;
+    margin: 5px;
+    width: auto;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: papayawhip;
+    float: left;
+}
+
+a{
+    color: papayawhip;
+    background-color: olive;
+    text-decoration: none;
+}
+
+a:hover{
+    color: olive;
+    background-color: papayawhip;
+    height: 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.fuente_externa{
+    font-family: 'hanalei_fillregular';
+}
+
