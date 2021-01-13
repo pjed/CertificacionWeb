@@ -1,0 +1,63 @@
+/* CSS styles */
+body{
+  margin: 0;
+  background-color: #E0E1EB;
+  font-style: Arial;
+  text-align: left;
+}
+
+h1{
+  margin: 0;
+  background-color: #33354D;
+  color: white;
+  font-size: 4rem;
+}
+
+#escritorio{
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 35%;
+  border-left: 2px solid #33354D;
+  border-right: 2px solid #33354D;
+}
+
+#internet{
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  width: 35%;
+  border-left: 2px solid #33354D;
+  border-right: 2px solid #33354D;
+}
+
+h2{
+  margin: 5px;
+  background-color: #33354D;
+  color: white;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+article{
+  border-radius: 10px;
+  margin: 20px 40px;
+  background-color: white;
+  padding-bottom: 5px;
+}
+
+h3{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 5px;
+  background-color: green;
+  color: white;
+  font-size: 1.5rem;
+}
+
+p{
+  margin: 5px 5px;
+  text-align: justify;
+}
+
+          
