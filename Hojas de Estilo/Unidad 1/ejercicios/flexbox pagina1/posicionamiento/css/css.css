@@ -21,14 +21,12 @@ h3{
 section{
   width: 100%;
   display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 article{
   width: 100vh;
-  height: 100vh;
   padding: 5px;
+  text-align: justify;
 }
 
 img{
@@ -36,15 +34,20 @@ img{
   padding: 5px;
 }
 
-.polonia{
+article:nth-child(1){
   background-color: #80BCBC;
 }
 
-.oporto{
+article:nth-child(2){
   background-color: #B6EBB3;
 }
 
-.malta{
+article:nth-child(3){
   background-color: #B9CEE3;
 }
-          
+      
+@media all and (width: 500px){
+  section{
+    flex-direction: column;
+  }
+}
