@@ -247,3 +247,16 @@ h4{
     flex-direction: column;
   }
 }
+
+@media all and (max-width:600px){
+  .articulos{
+    flex-direction: column;
+  }
+  .off{
+    display: none;
+  }
+
+  .nav a{
+    font-size: 30px;
+  }
+}
