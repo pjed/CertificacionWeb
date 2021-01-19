@@ -118,7 +118,7 @@ h1{
 }
 
 .articulos {
-  background-color: lightgrey;
+  background-color: white;
   flex: 2 1 auto;
   display: flex;
   flex-flow: row wrap;
@@ -155,6 +155,7 @@ h1{
 .navegacion {
   background-color: lightblue;
   flex: 1 1 100%;
+  margin: 10px 10px 0 0;
 }
 
 .navegacion a{
