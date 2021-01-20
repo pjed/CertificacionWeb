@@ -1,0 +1,293 @@
+/* CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Gloria+Hallelujah&display=swap');
+
+/*
+  font-family: 'Audiowide', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.margen-interno{
+  padding: 0 15px;
+  margin: 0 5px;
+}
+
+.margen-superior{
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+.social a{
+  font-size: 18px;
+  color: darkblue;
+  padding: 0 5px;
+}
+
+.social a:hover{
+  color: coral;
+}
+
+body{
+  /*font-family: 'Audiowide', cursive;*/
+}
+
+.nav a:hover{
+  color: coral;
+}
+
+li{
+  list-style-type: none;
+}
+
+h1{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 21px;
+  color: rgb(211, 95, 95);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.padre {
+  /*background-color: black;*/
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header {
+  background-color: rgb(134, 129, 51);
+  background: url(../img/airbnbfondo.jpg);
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.349);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.logo img{
+  width: 5%;
+}
+
+.logo a{
+  color: white;
+  text-decoration: none;
+}
+
+.logo a:hover{
+  color: blue;
+  font-size: 20px;
+}
+
+.nav a{
+  color: rgb(255, 255, 255);
+  padding: 0 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.social {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.texto-principal {
+  /*background-color: pink;*/
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-buscador{
+  /*background-color: pink;*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.texto-principal p{
+  flex: 1 1 auto;
+  background-color: rgba(0, 0, 0, 0.349);
+  font-size: 40px;
+  padding: 10px;
+}
+
+input[type="button"]{
+  background-color: #FE595E;
+  color: white;
+  float: right;
+  border-radius: 5px;
+}
+
+input[type="search"]{
+  border-style: none;
+  width: 80%;
+  margin-left: 5px;
+}
+
+i{
+  padding: 5px;
+}
+
+.buscador{
+  flex: 1 1 auto;
+  background-color: white;
+  color: grey;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+i{
+  margin-right: 5px;
+}
+
+.texto-principal input{
+  flex: 1 1 auto;
+  font-size: 18px;
+  padding: 10px;
+}
+
+button{
+  width: 70px;
+  height: 40px;
+}
+
+.section {
+  /*background-color: black;*/
+  display: flex;
+}
+
+.articulos {
+  background-color: white;
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.article {
+  background-color: goldenrod;
+  flex: 1 1 45%;
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background-color: #ececec;
+  margin: 10px 10px 0 0;
+}
+
+.article a{
+  color: #fff;
+  font-size: 13px;
+  padding: 10px;
+  background-color: #000;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.article a:hover{
+  background-color: #546cc3;
+}
+
+.article p{
+  padding: 15px;
+  text-align: justify;
+}
+
+.navegacion {
+  background-color: lightblue;
+  flex: 1 1 100%;
+  margin: 10px 10px 0 0;
+}
+
+.navegacion a{
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+
+.aside {
+  /*background-color: blueviolet;*/
+  flex: 1 1 auto;
+}
+
+.aside img{
+  width: 100%;
+}
+
+.publicidad {
+  /*background-color: crimson;*/
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer {
+  /*background-color: black;*/
+  display: flex;
+  justify-content: center;
+}
+
+.pie {
+  /*background-color: darkcyan;*/
+  width: auto;
+  color: blueviolet;
+}
+
+h2{
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+  color: #fff;
+}
+
+h3{
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 0;
+  margin-top: -80px;
+}
+
+.article img{
+  width: 100%;
+}
+
+h4{
+  background-color: #000;
+  font-size: 9px;
+  color: #fff;
+  padding: 5px;
+  text-transform: uppercase;
+}
