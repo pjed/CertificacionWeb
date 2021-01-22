@@ -1,0 +1,334 @@
+/* CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.margen-superior{
+  padding-top: 5px;
+}
+
+a{
+  margin-left: 5px;
+}
+
+.social a{
+  font-size: 18px;
+  color: darkblue;
+  padding: 0 5px;
+}
+
+.social a:hover{
+  color: coral;
+}
+
+body{
+  border-left: 20px solid grey;
+  border-right: 5px solid grey;
+  border-top: 5px solid grey;
+  border-bottom: 5px solid grey;
+  /*font-family: 'Audiowide', cursive;*/
+}
+
+li{
+  list-style-type: none;
+}
+
+h1{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 21px;
+  color: rgb(211, 95, 95);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.padre {
+  /*background-color: black;*/
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.logo{
+  /*background-color: black;*/
+  color: black;
+  background-color: rgba(255,192,156, 0.349);
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row nowrap;
+  font-size: x-large;
+  padding: 10px;
+  font-family: 'Rusian Display', cursive;
+}
+
+.logo img{
+  margin-right: 20px;
+}
+
+.header {
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  width: auto;
+}
+
+.menu {
+  background-color: #FD5F00;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.logo img{
+  width: 5%;
+}
+
+.logo a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.logo a:hover{
+  color: blue;
+  font-size: 20px;
+}
+
+.nav a{
+  color: rgb(255, 255, 255);
+  padding: 0 5px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.nav a:hover{
+  border-bottom: 3px solid white;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.social {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+.cabecera-principal {
+  /*background-color: pink;*/
+  background: url("../img/surfacepro.jpg");
+  background-size: 67%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  color: black;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.surface{
+  position: absolute;
+  bottom: 425px;
+  border: 2px solid rgb(42,150,216);
+  left: 20px;
+}
+
+.cabecera-principal p{
+  flex: 1 1 auto;
+  font-size: 40px;
+  padding: 10px;
+}
+
+i{
+  padding: 5px;
+  font-size: 25px;
+  color: rgb(220,152,112);
+}
+
+i{
+  margin-right: 5px;
+}
+
+.cabecera-principal input{
+  flex: 1 1 auto;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.section {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articulos {
+  background-color: rgb(204,204,204);
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 10px 20px 10px;
+}
+
+.sociales{
+  display: flex;
+  flex: 1 1 auto;
+  margin-top: 10px;
+}
+
+.sociales a{
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+.sociales a img{
+  width: 25%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.article {
+  color: #444;
+  font-size: 13px;
+  text-align: center;
+  border: 2px solid grey;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  margin-left: 7px;
+  margin-right: 7px;
+  
+}
+
+.article a{
+  color: aquamarine;
+  font-size: 13px;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.presentamos{
+  display: flex;
+  flex-flow: column wrap;
+  background: url("../img/airbnb_pixabay.jpg");
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+  height: 500px;
+}
+
+.presentamos p{
+  background-color: rgba(206, 206, 206, 0.9);
+  font-size: 30px;
+  width: 40%;
+  margin: 20px 0 0 20px;
+  padding: 5px;
+}
+
+.presentamos p:nth-child(2){
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+  width: 40%;
+  margin: 20px 0 0 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+h4{
+  text-transform: uppercase;
+  color: #9D948F;
+  margin-bottom: 10px;
+}
+
+.article a:hover{
+  background-color: #546cc3;
+}
+
+.article p{
+  text-align: center;
+}
+
+.navegacion {
+  background-color: lightblue;
+  flex: 1 1 100%;
+  margin: 10px 10px 0 0;
+}
+
+.navegacion a{
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+
+.aside {
+  /*background-color: blueviolet;*/
+  flex: 1 1 auto;
+}
+
+.aside img{
+  width: 100%;
+}
+
+.publicidad {
+  /*background-color: crimson;*/
+  color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.footer {
+  /*background-color: black;*/
+  display: flex;
+  justify-content: space-between;
+  background-color: #EAE1DC;
+  height: 200px;
+  padding: 50px 100px 50px 50px;
+  border-top: 2px solid rgb(183,179,162);
+  border-bottom: 25px solid #CCCCCC;
+}
+
+.nav:hover{
+  margin-top: 15px;
+}
+
+.porque a{
+  text-decoration: none;
+  color: rgb(161,152,147);
+}
+
+.somos a{
+  text-decoration: none;
+  color: rgb(161,152,147);
+}
+
+.contactar a{
+  text-decoration: none;
+  color: rgb(161,152,147);
+}
+
+.article img{
+  width: 50%;
+}
