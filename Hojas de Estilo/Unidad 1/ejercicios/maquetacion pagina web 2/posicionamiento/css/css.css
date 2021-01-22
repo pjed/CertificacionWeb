@@ -152,9 +152,27 @@ input[type="button"]{
   border-radius: 5px;
 }
 
+.descubre{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.tipo img{
+  width: 50%;
+}
+
+.tipo{
+  flex: 1 1 auto;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
 input[type="search"]{
   border-style: none;
-  width: 80%;
+  width: 70%;
   margin-left: 5px;
 }
 
@@ -223,6 +241,7 @@ button{
   background-attachment: local;
   background-size: cover;
   height: 500px;
+  margin: 20px;
 }
 
 .presentamos p{
