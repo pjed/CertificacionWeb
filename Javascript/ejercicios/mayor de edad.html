@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de edad</title>
+</head>
+<body>
+    <script>
+        var edad = 0;
+        var mayorEdad=18;
+
+        edad = parseInt(prompt("Dame tu edad y te dire si eres mayor de 18 años o no"));
+
+        if (edad == 18){
+            document.write("Eres mayor de edad, tienes "+edad+" años");
+        }else if(edad < 18){
+            document.write("Eres menor de edad, tienes "+edad+" años");
+        }else{
+            document.write("Eres mayor de edad, tienes más de 18 años "+edad+" años");
+        }
+
+    </script>
+</body>
+</html>

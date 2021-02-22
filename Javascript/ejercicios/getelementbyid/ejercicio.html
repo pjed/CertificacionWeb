@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get element by id</title>
+    <script>
+        function funcion(){
+            var valor = document.getElementById("txt").value;
+            
+            //Asignar el valor de la caja de texto txt en txt2
+            //document.getElementById("txt2").value = valor;
+
+            //modificar el div uno con lo que me interese.
+            //document.getElementById("uno").innerHTML += valor+"<br>";
+
+            document.getElementById("uno").innerHTML += "Pos otro mas: <input type='text'><br>";
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt" name="txt"><br><br>
+    Dame algo: <input type="button" value="pincha" onclick="funcion()"><br><br>
+    ha dicho: <input type="text" id="txt2" name="txt2"><br>
+    <div id="uno" style="float: left;"></div><br>
+    <div id="dos" style="float: right;"></div><br>
+</body>
+</html>

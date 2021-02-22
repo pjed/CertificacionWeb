@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <h1>Acceso de Usuarios</h1>
+    <div class="contenedor">
+        <div class="hijo">
+            <fieldset>
+                <legend>Login</legend>
+                Login: <input type="text" id="login" placeholder="Login"><br><br>
+                Password: <input type="password" id="password" placeholder="Contraseña"><br><br>
+                <input type="button" onclick="comprobarLogin()" id="entrar" value="Entrar"><br><br>
+            </fieldset>
+        </div>
+      </div>
+      <div id="informacion"></div><br><br>
+      <input type="button" onclick="cerrar()" id="salir" hidden value="Salir de la aplicacion">
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+html {
+  background-color: lightgrey;
+  text-align: center;
+}
+
+fieldset{
+    background-color: white;
+    font-size: 25px;
+}
+
+
+.hijo{
+    padding: 15px;
+    background-color: white;
+}
+
+input{
+    font-size: 20px;
+}
+
+
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#informacion {
+  font-size: 20px;
+  color: red;
+}
