@@ -55,7 +55,8 @@ function calculaVencimiento() {
       }
     } else {
       /* para cualquier otra fecha */
-      mes = mes + 2;
+      mes = 2;
+      anio = anio + 1; 
     }
 
     /* Escribo la fecha del pago a 60 días */
