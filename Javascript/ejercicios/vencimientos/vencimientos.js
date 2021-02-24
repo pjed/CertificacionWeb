@@ -13,38 +13,76 @@ function calculaVencimiento() {
 
   pago = document.getElementById("pago").value;
 
+  //Si es a 30 dias
   if (pago == 0) {
-    /* Si la fecha elegida es dia 29-30-31 y el mes es enero */
-    if ((dia == 29 || dia == 30 || dia == 31) && mes == 1) {
+    /* El mes es enero */
+    if (mes == 1) {
+      //Si comprobar si los dias son 29-30-31
       if (dia == 29) {
         dia = 1;
-        mes = mes + 1;
+        mes = 2;
       } else if (dia == 30) {
         dia = 2;
-        mes = mes + 1;
-      } else {
+        mes = 2;
+      } else if (dia == 31) {
         dia = 3;
-        mes = mes + 1;
+        mes = 2;
       }
-      /* para cualquier otra fecha */
+    } else {
+      /* Si los dias son otros */
+      mes = mes + 1;
     }
 
-    /* Pago a 30 Días */
+    /* Escribo la fecha del pago a 30 días */
     mes = mes + 1;
     document.getElementById("info").innerHTML =
       "El pago a 30 días acaba el día " + dia + "/" + mes + "/" + anio;
-  } else if (pago == 1) {
-    /* Pago a 60 Días */
-    mes = mes + 2;
 
-    /* Si la fecha elegida es dia 28-29-30-31 y el mes es diciembre */
+    //Si es a 60 dias
+  } else if (pago == 1) {
+    //El mes es diciembre
+    if (mes == 12) {
+      //Comprobar si los dias son 29, 30 o 31
+      if (dia == 29) {
+        dia = 1;
+        mes = 3;
+      } else if (dia == 30) {
+        dia = 2;
+        mes = 3;
+      } else if (dia == 31) {
+        dia = 3;
+        mes = 3;
+      }
+    } else {
+      /* para cualquier otra fecha */
+      mes = mes + 2;
+    }
+
+    /* Escribo la fecha del pago a 60 días */
     document.getElementById("info").innerHTML =
-      "El pago a 30 días acaba el día " + dia + "/" + mes + "/" + anio;
+      "El pago a 60 días acaba el día " + dia + "/" + mes + "/" + anio;
   } else {
     /* Pago a 90 Días */
-    mes = mes + 3;
-    /* Si la fecha elegida es dia 28-29-30 y el mes es noviembre */
+    //El mes es noviembre
+    if (mes == 11) {
+      //Comprobar si los dias son 29, 30 o 31
+      if (dia == 29) {
+        dia = 1;
+        mes = 3;
+      } else if (dia == 30) {
+        dia = 2;
+        mes = 3;
+      } else if (dia == 31) {
+        dia = 3;
+        mes = 3;
+      }
+    } else {
+      /* para cualquier otra fecha */
+      mes = mes + 3;
+    }
+
+    /* Escribo la fecha del pago a 90 días */
     document.getElementById("info").innerHTML =
-      "El pago a 30 días acaba el día " + dia + "/" + mes + "/" + anio;
+      "El pago a 90 días acaba el día " + dia + "/" + mes + "/" + anio;
   }
 }
