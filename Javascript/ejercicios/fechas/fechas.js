@@ -19,6 +19,6 @@ function comprobar() {
     "DIA ACTUAL " + diasSemana[Ndia-1] + " con fecha " + dia + " de " + meses[mes-1] + " del " + ano+"<br>";
 
     document.getElementById("info").innerHTML +=
-      "DIA SELECCIONADO " + diasSemana[Ndia-1] + " con fecha " + diaSel + " de " + meses[mesSel-1] + " del " + anioSel+"<br>";
+      "DIA SELECCIONADO " + diasSemana[NdiaSel-1] + " con fecha " + diaSel + " de " + meses[mesSel-1] + " del " + anioSel+"<br>";
 }
 
