@@ -5,22 +5,20 @@ function comprobar() {
   var mes = fecha.getMonth()+1;
   var ano = fecha.getFullYear();
 
+  var diasSemana = new Array("Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo");
+  var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio", "Agosto", "Septiembre","Octubre","Noviembre","Diciembre");
 
+  var f = document.getElementById("fecha").value;
+  var fe = new Date(f);
+  var NdiaSel = fe.getDay();
+  var diaSel = fe.getDate();
+  var mesSel = fe.getMonth()+1;
+  var anioSel = fe.getFullYear();
 
-  if(Ndia === 3){
-    Ndia ="Miercoles";
-  }
+  document.getElementById("info").innerHTML +=
+    "DIA ACTUAL " + diasSemana[Ndia-1] + " con fecha " + dia + " de " + meses[mes-1] + " del " + ano+"<br>";
 
-  var ven = 0;
-
-  var f = document.getElementById("fecha1").value;
-
-  var d = f.substring(8,10);
-
-  alert(d);
-
-  document.getElementById("fecha").value =
-    "A " + Ndia + " con fecha " + dia + "-" + mes + "-" + ano;
-
-    var info = document.getElementById("info").innerHTML = "La fecha es: "+d;
+    document.getElementById("info").innerHTML +=
+      "DIA SELECCIONADO " + diasSemana[Ndia-1] + " con fecha " + diaSel + " de " + meses[mesSel-1] + " del " + anioSel+"<br>";
 }
+
