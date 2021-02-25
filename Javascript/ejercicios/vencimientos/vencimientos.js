@@ -28,9 +28,6 @@ function calculaVencimiento() {
         dia = 3;
         mes = 2;
       }
-    } else {
-      /* Si los dias son otros */
-      mes = mes + 1;
     }
 
     /* Escribo la fecha del pago a 30 días */
@@ -46,17 +43,20 @@ function calculaVencimiento() {
       if (dia == 29) {
         dia = 1;
         mes = 3;
+        anio = anio + 1;
       } else if (dia == 30) {
         dia = 2;
         mes = 3;
+        anio = anio + 1;
       } else if (dia == 31) {
         dia = 3;
         mes = 3;
+        anio = anio + 1;
+      } else {
+        /* para cualquier otra fecha */
+        mes = 2;
+        anio = anio + 1;
       }
-    } else {
-      /* para cualquier otra fecha */
-      mes = 2;
-      anio = anio + 1; 
     }
 
     /* Escribo la fecha del pago a 60 días */
@@ -70,6 +70,7 @@ function calculaVencimiento() {
       if (dia == 29) {
         dia = 1;
         mes = 3;
+        anio = anio + 1;
       } else if (dia == 30) {
         dia = 2;
         mes = 3;
