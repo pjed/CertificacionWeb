@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semilleros Reunidos de Puertollano SAL</title>
+    <link rel="stylesheet" href="css/examen.css">
+    <script src="js/examen.js"></script>
+</head>
+
+<body>
+    <h1>Semilleros Reunidos de Puertollano, SAL</h1>
+    <div class="flex-container">
+        <div class="flex-item centrado">
+            <span> Escriba el item a buscar: </span><input type="text" name="itemConsultar"
+                id="itemConsultar"><br><br>
+            <input type="button" value="Consultar Existencias" onclick="consultarExistencias()">
+        </div>
+        <div class="flex-item centrado">
+            <span>Escriba el item a añadir: </span><input type="text" name="itemAdd" id="itemAdd"><br><br>
+            <input type="button" value="Añadir Semillas" onclick="addSemilla()">
+        </div>
+        <div class="flex-item centrado">
+            <input type="button" value="Ver Informe" onclick="mostrarInforme()">
+        </div>
+        <hr>
+        <div class="flex-item titulo centrado">
+            <h2>INFORMACIÓN</h2>
+        </div>
+        <div id="informacion" class="flex-item informacion centrado"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+body {
+  background-color: lightgray;
+}
+
+span {
+  text-align: center;
+}
+.informacion {
+  background-color: #4f81bd;
+  border: #748ead 2px solid;
+  width: 100%;
+  height: auto;
+  color: white;
+  padding: 15px;
+  box-shadow: 2px 2px #888888;
+  border-radius: 5px 5px;
+}
+
+.titulo {
+  background-color: blue;
+  width: auto;
+  height: auto;
+  color: white;
+  text-align: center;
+  box-shadow: 2px 2px #888888;
+  border-radius: 5px 5px;
+}
+
+hr {
+  border: 1px solid blue;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+h1 {
+  background-color: #4bacc6;
+  color: white;
+  text-align: center;
+  box-shadow: 1px 1px #888888;
+  border-radius: 5px 5px;
+  padding: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.flex-item:nth-child(1) {
+  order: 0;
+  flex: 0 1 28%;
+  align-self: stretch;
+  padding-bottom: 25px;
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px #888888;
+  border-radius: 5px 5px;
+}
+
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 0 1 28%;
+  align-self: stretch;
+  background-color: white;
+  margin: 15px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 2px 2px #888888;
+  border-radius: 5px 5px;
+}
+
+.flex-item:nth-child(3) {
+  order: 0;
+  flex: 0 1 28%;
+  align-self: stretch;
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 2px 2px #888888;
+  border-radius: 5px 5px;
+}
+
+.flex-item:nth-child(4) {
+  order: 0;
+  flex: 0 1 100%;
+  align-self: auto;
+}
+
+.flex-item:nth-child(5) {
+  order: 0;
+  flex: 0 1 100%;
+  align-self: stretch;
+}
