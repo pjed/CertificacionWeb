@@ -1,4 +1,6 @@
-var texto, info, expresion;
+var texto,
+	info,
+	expresion;
 
 function existeDia(dia, array) {
 	var existe = false;
@@ -20,7 +22,7 @@ function validaciones() {
 
 	/* EXPRESIONES REGULARES */
 	//4- Confeccionar una expresión regular que valide el ingreso del nombre de un día de la semana, un espacio y un número de 1 o 2 dígitos
-	expresion = /[[l][u][n][e][s]|[m][a][r][t][e][s]|[m][i][e][r][c][o][l][e][s]|[j][u][e][v][e][s]|[v][i][e][r][n][e][s]|[s][a][b][a][d][o]|[d][o][m][i][n][g][o]]\s\d{1,2}$/;
+	expresion = /(lunes|martes|miercoles|jueves|viernes|sabado|domingo)\s\d{1,2}$/;
 
 	if (expresion.test(texto)) {
 		info.innerHTML += 'El valor ' + texto + ' es CORRECTO <br>';

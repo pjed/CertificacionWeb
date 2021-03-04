@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validaciones2</title>
-    <script src="js/expresion3.js"></script>
-</head>
-<body>
-    <h1>Validaciones</h1>
-    Introduce una coordenada formato (000,000):<input type="text" id="texto" placeholder="(000,000)"> 
-    <input type="button" value="Validar Input" onclick="validaciones()">
-    <div id="info"></div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cuenta corriente</title>
+		<script src="js/expresion6.js"></script>
+	</head>
+	<body>
+		<h1>Validaciones Cuenta Corriente</h1>
+		Cuenta Corriente
+		<input type="text" id="cod_pais" placeholder="ESXX"/>
+		<input type="text" id="entidad" placeholder="XXXX"/>
+		<input type="text" id="oficina" placeholder="XXXX"/>
+		<input type="text" id="dc" placeholder="XX"/>
+		<input type="text" id="cuenta" placeholder="XXXXXXXXXX"/><br />
+		<input type="button" value="Validar Input" onclick="validaciones()" />
+		<div id="info"></div>
+	</body>
 </html>
