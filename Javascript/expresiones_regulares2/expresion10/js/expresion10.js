@@ -7,7 +7,7 @@ function validaciones() {
 	info.innerHTML += '<br>';
 
 	/* EXPRESIONES REGULARES */
-	expresion = /^"[A-Za-z0-9]{8,12}$"/;
+	expresion = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,12}]$/;
 
 	//Comprobamos la expresion
 	if (expresion.test(texto)) {

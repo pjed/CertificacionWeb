@@ -9,7 +9,7 @@ function validaciones() {
 	/* EXPRESIONES REGULARES */
 	//Validar un nombre, incluyendo nombres compuestos por dos palabras como mucho
 	//expresion = /^[A-Za-z]+\s[A-Za-z]+$/;
-	expresion = /^([A-Z][a-z]+)(\s[A-Z][a-z]+)?$/;
+	expresion = /^([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)(\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)?$/;
 
 	//Comprobamos la expresion
 	if (expresion.test(texto)) {
