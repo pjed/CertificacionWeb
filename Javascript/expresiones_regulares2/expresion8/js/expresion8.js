@@ -8,7 +8,7 @@ function validaciones() {
 
 	/* EXPRESIONES REGULARES */
 	//Expresion 1
-	expresion = /^[@]\w{5,12}$/;
+	expresion = /^[@][0-9A-Za-z_-]{3,15}$/;
 
 	//Comprobamos la expresion
 	if (expresion.test(texto)) {

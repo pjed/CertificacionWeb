@@ -10,7 +10,8 @@ function validaciones() {
 
 	/* EXPRESIONES REGULARES */
 	//Validar que se ingresa un número real (positivo o negativo), cuyo separador de decimales puede ser la coma o el punto
-	expresion = /^[+-]?\d{2}[,.]?\d{2}$/;
+	//expresion = /^[+-]?\d{2}[,.]?\d{2}$/;
+	expresion = /^[+-]?[0-9]+([.,][0-9]+)?$/;
 	if (expresion.test(texto)) {
 		info.innerHTML += 'El valor ' + texto + ' es CORRECTO <br>';
 	} else {
