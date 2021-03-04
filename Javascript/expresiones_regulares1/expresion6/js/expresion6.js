@@ -30,23 +30,33 @@ function validaciones() {
 
 	if (expresion1.test(cod_pais)) {
 		cod_paisCorrecto = true;
+	}else{
+		info.innerHTML += "Código Pais INCORRECTO<br>";
 	}
 	if (expresion2.test(entidad)) {
 		entidadCorrecto = true;
+	}else{
+		info.innerHTML += "Código Entidad INCORRECTO<br>";
 	}
 	if (expresion3.test(oficina)) {
 		oficinaCorrecto = true;
+	}else{
+		info.innerHTML += "Código Oficina INCORRECTO<br>";
 	}
 	if (expresioncc.test(dc)) {
 		dcCorrecto = true;
+	}else{
+		info.innerHTML += "Código DC INCORRECTO<br>";
 	}
 	if (expresion4.test(cuenta)) {
 		cuentaCorrecto = true;
+	}else{
+		info.innerHTML += "Cuenta Correo INCORRECTO<br>";
 	}
 
 	//Comprobamos que no falta ningun digito en los campos
 	if (cod_paisCorrecto && entidadCorrecto && oficinaCorrecto && dcCorrecto && cuentaCorrecto) {
-		info.innerHTML += 'No faltan digitos estan todos';
+		//info.innerHTML += 'No faltan digitos estan todos';
 		//Comprobamos los digitos de control
 		var dcDigitos = calcularDigitosCC(entidad, oficina, cuenta, dc);
 		if (dcDigitos) {
@@ -54,9 +64,7 @@ function validaciones() {
 		} else {
 			info.innerHTML += 'DC Control FALSO';
 		}
-	} else {
-		info.innerHTML += 'Faltan digitos revise los campos';
-	}
+	} 
 }
 
 function calcularDigitosCC(entidad, oficina, CCC, dc) {
@@ -143,7 +151,7 @@ function calcularSegundoDigito(oficina) {
 	var resto = suma % 11;
 	var segundoDigito = 11 - resto;
 
-	if (segundoDigito == 10) {
+	if (segundoDigito == 11) {
 		segundoDigito = 1;
 	}
 

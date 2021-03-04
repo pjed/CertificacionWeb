@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Validar contraseña</title>
+		<script src="js/expresion10.js"></script>
+	</head>
+	<body>
+		<h1>Validaciones Cuenta Corriente</h1>
+		Queremos comprobar la fortaleza de una contraseña teniendo en cuenta que debe tener entre 8 y 12 caracteres, y
+		al menos una mayúscula, una minúscula, y un dígito.<br />
+		<input
+			type="text"
+			id="caja"
+			placeholder="Escribe una contraseña de al menos 8 caracteres, Mayuscula, minuscula y un digito"
+		/>
+		<input type="button" value="Validar Input" onclick="validaciones()" />
+		<div id="info"></div>
+	</body>
+</html>
