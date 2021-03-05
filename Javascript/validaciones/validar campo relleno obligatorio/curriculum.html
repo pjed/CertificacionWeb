@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>validarCampoObligatorio</title>
+		<script src="js/validar.js"></script>
+        <link rel="stylesheet" href="css/validar.css">
+	</head>
+	<body>
+		<form method="post" onsubmit="return validarCampoObligatorio(this);" action="mailto:alguien@sitio.com?subject=Prueba" enctype="text/plain">
+			Escribe un texto obligatorio: <input type="text" name="texto" id="texto" /> <br>
+            <div id="info"></div>
+            <input type="submit" value="Enviar"">
+            <input type="reset" value="Limpiar" id="reset">
+		</form>
+	</body>
+</html>
