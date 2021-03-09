@@ -4,19 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>validarFecha</title>
+		<title>validarCheckbox</title>
 		<script src="js/validar.js"></script>
         <link rel="stylesheet" href="css/validar.css">
 	</head>
 	<body>
-		<form method="post" onsubmit="return validarSelect(this);" action="mailto:alguien@sitio.com?subject=Prueba" enctype="text/plain">
-			Elige una opción: 
-			<select name="opcion" id="opcion">
-				<option value="0">--- Elige una opción ---</option>
-				<option value="1">Una</option>
-				<option value="2">Dos</option>
-			</select> <br>
-            <div id="info"></div>
+		<form method="post" onsubmit="return validarCheckbox(this);" action="mailto:alguien@sitio.com?subject=Prueba" enctype="text/plain">
+			Número de hijos: <br> 
+			<input type="checkbox" name="check1" id="check1" value="0"/> 0<br>
+            <input type="checkbox" name="check2" id="check2" value="1"/> 1<br>
+			<input type="checkbox" name="check3" id="check3" value="2"/> 2<br>
+			<div id="info"></div>
             <input type="submit" value="Enviar"">
             <input type="reset" value="Limpiar" id="reset">
 		</form>

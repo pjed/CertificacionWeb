@@ -1,14 +1,14 @@
-var texto, info;
+var telefono, info;
 
 function validarTelefono(campos) {
-	texto = campos.texto.value;
+	telefono = campos.telefono.value.trim();
 	info = document.getElementById('info');
 
 	
-	expresion = /^\d{9}$/;
+	expresion = /^[6-9]\d{2}(\s[0-9]{3}){2}$/;
 
 	//Comprobamos la expresion
-	if (expresion.test(texto)) {
+	if (expresion.test(telefono)) {
 		info.innerHTML += 'TELÉFONO CORRECTO<br>';
 		return true;
 	} else {
