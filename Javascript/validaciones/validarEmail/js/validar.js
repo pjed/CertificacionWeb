@@ -24,8 +24,9 @@ function validarEmail(campos) {
  */
 function comprobarEmail(email){
 	
-	var expresion = /^[^.-_][a-zA-Z0-9]+@[a-zA-Z0-9.-_]+[.][a-zA-Z0-9-]+$/;
-
+	//var expresion = /^[^.-_]\w+@\w+[.][a-zA-Z0-9-]+$/;
+	var expresion = /^\w+([.-]\w+)*@\w+([.-]\w+)*\.\w{2,4}$/;
+	
 	if(expresion.test(email)){
 		return true;
 	}

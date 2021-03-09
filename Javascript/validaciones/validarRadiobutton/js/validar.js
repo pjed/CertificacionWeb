@@ -1,15 +1,14 @@
-var genero, info;
+var genero, info, selectedValue;
 
-function validarFecha(campos) {
+function validarRadiobutton(campos) {
 	genero = campos.genero;
 	info = document.getElementById('info');
 
 	//Comprobamos que ha seleccionado algun radiobutton
 	if (comprobarRadio(genero)) {
-		info.innerHTML += 'CORRECTO';
-		return true;
+		info.innerHTML += 'El seleccionado es: ' + selectedValue + '<br>';
 	} else {
-		info.innerHTML += 'INCORRECTO - Seleccione por lo menos una opción';
+		info.innerHTML += 'INCORRECTO - Seleccione por lo menos una opción<br>';
 		return false;
 	}
 }
@@ -20,11 +19,11 @@ function validarFecha(campos) {
  * @param {f} radiobutton femenino
  */
 function comprobarRadio(g) {
-	var aux = false;
-	for (var i = 0; i < g.lenght; i++) {
-		if (g[i].checked) {
-			aux = true;
+	for (const radio of g) {
+		if (radio.checked) {
+			selectedValue = radio.value;
+			return true;
 		}
 	}
-	return aux;
+	return false;
 }

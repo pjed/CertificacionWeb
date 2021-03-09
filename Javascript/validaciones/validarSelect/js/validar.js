@@ -9,7 +9,7 @@ function validarSelect(campos) {
 		info.innerHTML += 'CORRECTO. Has elegido la opcion: '+opcion+"<br>";
 		return true;
 	} else {
-		info.innerHTML += 'INCORRECTO. Selecciona una opción.<br>';
+		info.innerHTML += 'INCORRECTO. Selecciona una opción correcta.<br>';
 		return false;
 	}
 }

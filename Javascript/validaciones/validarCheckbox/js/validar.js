@@ -1,30 +1,56 @@
-var check1, check2, check3, info;
+var producto1,
+	producto2,
+	producto3,
+	cuantosSeleccionados = 0,
+	productoIDs = '',
+	info;
 
 function validarCheckbox(campos) {
-	check1 = campos.check1;
-	check2 = campos.check2;
-	check3 = campos.check3;
+	producto1 = campos.producto1;
+	producto2 = campos.producto2;
+	producto3 = campos.producto3;
 	info = document.getElementById('info');
 
 	//Comprobamos la expresion
-	if (comprobarChecks(check1, check2, check3)) {
-		info.innerHTML += 'CORRECTO - Ha selecionado por lo menos un checkbox<br>';
+	cuantosSeleccionados = comprobarChecks(producto1, producto2, producto3, cuantosSeleccionados);
+
+	if (cuantosSeleccionados > 0) {
+		info.innerHTML += 'CORRECTO - <br>Ha selecionado ' + cuantosSeleccionados + ' con los IDs <br>' + productoIDs + '<br>';
 		return true;
 	} else {
-		info.innerHTML += 'INCORRECTO - Seleccione por lo menos un checkbox<br>';
+		info.innerHTML += 'INCORRECTO - Seleccione por lo menos un producto<br>';
 		return false;
 	}
 }
 
 /**
  * Función que comprueba que se ha seleccionado por lo menos un check
- * @param {check1} hijo 0 
- * @param {check2} hijo 1 
- * @param {check3} hijo 2 
+ * @param {producto1}
+ * @param {producto2}
+ * @param {producto3}
  */
-function comprobarChecks(check1, check2, check3) {
-	if (check1.checked || check2.checked || check3.checked) {
-		return true;
+function comprobarChecks(producto1, producto2, producto3, cuantos) {
+
+	for (const check of producto1) {
+		if (check.checked) {
+			productoIDs +="Producto 1 ->"+ check.value+" ";
+			cuantos += 1;
+		}
 	}
-	return false;
+	productoIDs += "<br>";
+	for (const check of producto2) {
+		if (check.checked) {
+			productoIDs +="Producto 2 ->"+ check.value+" ";
+			cuantos += 1;
+		}
+	}
+	productoIDs += "<br>";
+	for (const check of producto3) {
+		if (check.checked) {
+			productoIDs +="Producto 3 ->"+ check.value+" ";
+			cuantos += 1;
+		}
+	}
+	productoIDs += "<br>";
+	return cuantos;
 }
