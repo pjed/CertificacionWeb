@@ -2,7 +2,7 @@ var fecha, info;
 
 /**
  * Función que permite validar una fecha introducida por teclado
- * @param {campos} campos que existen en el formulario 
+ * @param {campos} campos que existen en el formulario
  */
 function validarFecha(campos) {
 	fecha = campos.texto.value.trim();
@@ -15,7 +15,7 @@ function validarFecha(campos) {
 			//info.innerHTML += 'La fecha existe y es correcta<br>';
 			return true;
 		} else {
-			info.innerHTML += 'La fecha no existe y es incorrecta<br>';
+			info.innerHTML += 'La fecha no existe<br>';
 			return false;
 		}
 	} else {
@@ -29,12 +29,20 @@ function validarFecha(campos) {
  * @param {fecha} introducida por teclado
  */
 function existeFecha(fecha) {
-	var aux = false;
+	var aux = true;
 
-	var f = fecha.split("/");
-	
-	if ((f[0]!=="30" && f[1]!=="02") || (f[0]!=="31" && f[1]!=="02")) {
-		aux = true;
+	var f = fecha.split('/');
+	var day = f[0];
+	var month = f[1];
+	var year = f[2];
+
+	//Le pasamos 0 para que al crear el objeto date sin dia por que no existe el dia 0
+	var date = new Date(year, month, '0');
+
+	//Cuando hace date.getDate() como le hemos pasado 0 nos da los dias que tenia el mes y año 
+	//que nos han introducido si por ejemplo le metemos un dia mas alto de 31 ya nos da error.
+	if ((parseInt(day)) > (parseInt(date.getDate()))) {
+		aux = false;
 	}
 
 	return aux;
