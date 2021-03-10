@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario de Validación</title>
+		<link rel="stylesheet" href="css/formulario.css" />
+		<script src="js/formulario.js"></script>
+	</head>
+	<body>
+		<h1>Formulario de Registro</h1>
+		<form method="post" onsubmit="return validarTodo(this)" action="mailto:alguien@sitio.com?subject=Registro" enctype="text/plain">
+            <div class="flex-container">
+                <div class="flex-item">
+                    <span>*Nombre: </span><input type="text" id="nombre" name="nombre" onblur="validarCampoTexto(this,'info_nombre')" /><br /><br />
+                    <div id="info_nombre"></div>
+        
+                    <span>*Apellidos: </span><input type="text" id="apellidos" name="apellidos"  onblur="validarCampoTexto(this,'info_apellidos')" /><br /><br />
+                    <div id="info_apellidos"></div>
+        
+                    <span>*D.N.I: </span><input type="text" id="dni" name="dni" onblur="validarDni(this,'info_dni')" /><br /><br />
+                    <div id="info_dni"></div>
+                </div>
+                <div class="flex-item">
+                    <span>Fecha de Nacimiento (dd/mm/aaaa): </span><input type="text" id="fnacimiento" name="fnacimiento" placeholder="(dd/mm/aaaa)" onblur="validarFecha(this,'info_fnacimiento')"/><br /><br />
+                    <div id="info_fnacimiento"></div>
+
+                    <span>Número de teléfono (NNN NN NN NN): </span><input type="text" id="telefono" name="telefono" placeholder="(NNN NN NN NN)" onblur="validarTelefono(this,'info_telefono')"/><br /><br />
+                    <div id="info_telefono"></div>
+        
+                    <span>Email: </span><input type="text" id="email" name="email" onblur="validarEmail(this, 'info_email')" placeholder="alguien@ejemplo.com"/><br /><br />
+                    <div id="info_email"></div>
+                </div>
+                <div class="flex-item">
+                    <span>*Ocupación: </span>
+                    <br /><select name="ocupacion" id="ocupacion" onblur="validarSelect(this, 'info_ocupacion')">
+                        <option value="">- Seleccione una ocupación -</option>
+                        <option value="1">Empleado</option>
+                        <option value="2">Desempleado</option>
+                        <option value="3">Estudiante</option>
+                    </select>
+                    <div id="info_ocupacion"></div>
+                </div>
+                <div class="flex-item">
+                    <span>*Aficiones: </span> <br />
+                    <input type="checkbox" name="aficiones" id="aficiones" value="Deportes" onblur="validarCheckbox('aficiones', 'info_aficiones')" />Deportes<br />
+                    <input type="checkbox" name="aficiones" id="aficiones" value="Cine" onblur="validarCheckbox('aficiones', 'info_aficiones')" />Cine<br />
+                    <input type="checkbox" name="aficiones" id="aficiones" value="Lectura" onblur="validarCheckbox('aficiones', 'info_aficiones')" />Lectura<br />
+                    <br />
+                    <div id="info_aficiones"></div>
+        
+                    <span>*Sexo: </span> <br />
+                    <input type="radio" name="sexo" id="sexo" value="varon" onblur="validarRadioButton('sexo', 'info_sexo')"/>Varón<br />
+                    <input type="radio" name="sexo" id="sexo" value="mujer" onblur="validarRadioButton('sexo', 'info_sexo')"/>Mujer<br />
+                    <input type="radio" name="sexo" id="sexo" value="otro" onblur="validarRadioButton('sexo', 'info_sexo')"/>Otro<br />
+                    <input type="radio" name="sexo" id="sexo" value="pnd" onblur="validarRadioButton('sexo', 'info_sexo')"/>Prefiero no decirlo<br />
+                    <br />
+                    <div id="info_sexo"></div>
+                </div>
+                <div class="flex-item">
+                    <input type="submit" value="Enviar" />
+                    <input type="reset" value="Resetear" onclick="resetearCampos()"/>
+                    <span>(*) Campos obligatorios</span>
+                </div>
+            </div>
+		</form>
+	</body>
+</html>
