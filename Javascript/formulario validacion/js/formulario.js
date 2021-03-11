@@ -9,11 +9,11 @@ function validarCampoTexto(elemento, info) {
 
 	if (patron.test(dato)) {
 		document.getElementById(info).innerHTML = 'Campo rellenado correctamente.';
-		document.getElementById(info).className = 'correcto';
+		document.getElementById(info).className = 'alert alert-success';
 		return true;
 	} else {
 		document.getElementById(info).innerHTML = 'Debe rellenar este campo correctamente.';
-		document.getElementById(info).className = 'error';
+		document.getElementById(info).className = 'alert alert-danger';
 		return false;
 	}
 }
@@ -54,7 +54,7 @@ function validarDni(dni, info) {
 
 	if (!patron.test(dato)) {
 		document.getElementById(info).innerHTML = 'Formato Incorrecto';
-		document.getElementById(info).className = 'error';
+		document.getElementById(info).className = 'alert alert-danger';
 		return false;
 	}
 
@@ -63,11 +63,11 @@ function validarDni(dni, info) {
 	//Se comprueba que la letra que ha metido el usuario sea igual que la de la posición del array
 	if (dato.charAt(8) != letrasDNI[resto]) {
 		document.getElementById(info).innerHTML = 'Letra del DNI Incorrecta';
-		document.getElementById(info).className = 'error';
+		document.getElementById(info).className = 'alert alert-danger';
 		return false;
 	} else {
 		document.getElementById(info).innerHTML = 'Campo rellenado correctamente.';
-		document.getElementById(info).className = 'correcto';
+		document.getElementById(info).className = 'alert alert-success';
 		return true;
 	}
 }
@@ -118,21 +118,21 @@ function validarFecha(fecha, info) {
 		if (validarFormatoFecha(fecha)) {
 			if (existeFecha(fecha)) {
 				document.getElementById(info).innerHTML = 'Campo rellenado correctamente.';
-				document.getElementById(info).className = 'correcto';
+				document.getElementById(info).className = 'alert alert-success';
 				return true;
 			} else {
 				document.getElementById(info).innerHTML = 'La fecha introducida no existe.';
-				document.getElementById(info).className = 'error';
+				document.getElementById(info).className = 'alert alert-danger';
 				return false;
 			}
 		} else {
 			document.getElementById(info).innerHTML = 'El formato de la fecha es incorrecto.';
-			document.getElementById(info).className = 'error';
+			document.getElementById(info).className = 'alert alert-danger';
 			return false;
 		}
 	} else {
 		document.getElementById(info).innerHTML = '';
-		document.getElementById(info).className = 'correcto';
+		//document.getElementById(info).className = 'alert alert-success';
 		return true;
 	}
 }
@@ -149,16 +149,16 @@ function validarTelefono(telefono, info) {
 	if (numero != '') {
 		if (patron.test(numero)) {
 			document.getElementById(info).innerHTML = 'Campo rellenado correctamente.';
-			document.getElementById(info).className = 'correcto';
+			document.getElementById(info).className = 'alert alert-success';
 			return true;
 		} else {
 			document.getElementById(info).innerHTML = 'Número Incorrecto.';
-			document.getElementById(info).className = 'error';
+			document.getElementById(info).className = 'alert alert-danger';
 			return false;
 		}
 	} else {
 		document.getElementById(info).innerHTML = '';
-		document.getElementById(info).className = 'correcto';
+		//document.getElementById(info).className = 'alert alert-success';
 		return true;
 	}
 }
@@ -175,16 +175,16 @@ function validarEmail(email, info) {
 	if (correo != '') {
 		if (patron.test(correo)) {
 			document.getElementById(info).innerHTML = 'Campo rellenado correctamente.';
-			document.getElementById(info).className = 'correcto';
+			document.getElementById(info).className = 'alert alert-success';
 			return true;
 		} else {
 			document.getElementById(info).innerHTML = 'Email Incorrecto.';
-			document.getElementById(info).className = 'error';
+			document.getElementById(info).className = 'alert alert-danger';
 			return false;
 		}
 	} else {
 		document.getElementById(info).innerHTML = '';
-		document.getElementById(info).className = 'correcto';
+		//document.getElementById(info).className = 'alert alert-success';
 		return true;
 	}
 }
@@ -198,12 +198,12 @@ function validarSelect(op, info) {
 	var opcion = op.value;
 
 	if (opcion == null || opcion == '') {
-		document.getElementById(info).innerHTML = 'No ha seleccionado un estado civil.';
-		document.getElementById(info).className = 'error';
+		document.getElementById(info).innerHTML = 'No ha seleccionado una ocupación.';
+		document.getElementById(info).className = 'alert alert-danger';
 		return false;
 	} else {
 		document.getElementById(info).innerHTML = 'Ha elegido la opción: ' + opcion;
-		document.getElementById(info).className = 'correcto';
+		document.getElementById(info).className = 'alert alert-success';
 		return true;
 	}
 }
@@ -229,12 +229,12 @@ function validarCheckbox(op, info) {
 
 	if (contador == 0) {
 		document.getElementById(info).innerHTML = 'No ha seleccionado ningún valor.';
-		document.getElementById(info).className = 'error';
+		document.getElementById(info).className = 'alert alert-danger';
 		return false;
 	} else {
 		document.getElementById(info).innerHTML =
 			'Ha seleccionado ' + contador + ' valores, que tienen como id: ' + marcados;
-		document.getElementById(info).className = 'correcto';
+		document.getElementById(info).className = 'alert alert-success';
 		return true;
 	}
 }
@@ -258,11 +258,11 @@ function validarRadioButton(op, info) {
 
 	if (marcado == null) {
 		document.getElementById(info).innerHTML = 'No ha seleccionado ningún valor.';
-		document.getElementById(info).className = 'error';
+		document.getElementById(info).className = 'alert alert-danger';
 		return false;
 	} else {
 		document.getElementById(info).innerHTML = 'Ha seleccionado el valor: ' + marcado;
-		document.getElementById(info).className = 'correcto';
+		document.getElementById(info).className = 'alert alert-success';
 		return true;
 	}
 }
@@ -294,13 +294,31 @@ function validarTodo(campos) {
  */
 function resetearCampos() {
 	document.getElementById('info_nombre').innerHTML = '';
+	document.getElementById('info_nombre').className = '';
+	
 	document.getElementById('info_apellidos').innerHTML = '';
+	document.getElementById('info_apellidos').className = '';
+
 	document.getElementById('info_dni').innerHTML = '';
+	document.getElementById('info_dni').className = '';
+
 	document.getElementById('info_fnacimiento').innerHTML = '';
+	document.getElementById('info_fnacimiento').className = '';
+
 	document.getElementById('info_telefono').innerHTML = '';
+	document.getElementById('info_telefono').className = '';
+
 	document.getElementById('info_email').innerHTML = '';
+	document.getElementById('info_email').className = '';
+
 	document.getElementById('ocupacion').value = 0;
+
 	document.getElementById('info_ocupacion').innerHTML = '';
+	document.getElementById('info_ocupacion').className = '';
+
 	document.getElementById('info_aficiones').innerHTML = '';
+	document.getElementById('info_aficiones').className = '';
+
 	document.getElementById('info_sexo').innerHTML = '';
+	document.getElementById('info_sexo').className = '';
 }
