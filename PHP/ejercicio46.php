@@ -10,10 +10,20 @@
         <h1>Tabla Potencias</h1>
         <table border="1">
             <?php
-            define("tam_tabla", 5);
+            define("TAM", 4);
             
-            $num = 0;
-            for ($fila = 1; $fila <= tam_tabla; $fila++) {
+            /**
+             * Función que te calcula la potencia
+             * @param type $base base
+             * @param type $exp exponente
+             * @return type resultado
+             */
+            function potencia($base, $exp){
+                return pow($base, $exp);
+            }
+            
+            $resultado = 0;
+            for ($fila = 1; $fila <= TAM; $fila++) {
 
                 //Pintar las filas pares de gris
                 if ($fila % 2 == 0) {
@@ -22,15 +32,11 @@
                     echo "<tr>\n";
                 }
 
-                for ($columna = 1; $columna <= tam_tabla; $columna++) {
-                    $num = potencia($fila, $columna);
-                    echo "<td>" . $num . "</td>\n";
+                for ($columna = 1; $columna <= TAM; $columna++) {
+                    $resultado = potencia($fila, $columna);
+                    echo "<td>" . $resultado . "</td>\n";
                 }
                 echo "</tr>\n";
-            }
-            
-            function potencia($base, $exp){
-                return pow($base, $exp);
             }
             ?>
         </table>
