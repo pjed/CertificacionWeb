@@ -1,0 +1,25 @@
+html{
+    margin: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+h1{
+    text-align: center;
+}
+
+.correcto{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+form{
+    display: block;
+    text-align: left;
+    width: 50%;
+}
