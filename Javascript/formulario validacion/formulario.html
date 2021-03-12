@@ -14,7 +14,7 @@
 			crossorigin="anonymous"
 		/>
 	</head>
-	<body class="bg-light">
+	<body class="bg-light" onload="resetearCampos()">
 		<h1 class="mb-4">Formulario de Registro</h1>
 		<div class="container h-100">
 			<div class="row h-100 justify-content-center align-items-center">
@@ -120,7 +120,7 @@
 							class="custom-select"
 							name="ocupacion"
 							id="ocupacion"
-							onblur="validarSelect(this, 'info_ocupacion')"
+							onchange="validarSelect(this, 'info_ocupacion')"
 						>
 							<option selected value="">- Seleccione una ocupación -</option>
 							<option value="1">Empleado</option>
@@ -138,7 +138,7 @@
 							class="form-check-input"
 							id="aficiones"
 							value="Deportes"
-							onblur="validarCheckbox('aficiones', 'info_aficiones')"
+							onchange="validarCheckbox('aficiones', 'info_aficiones')"
 						/>
 						<label class="form-check-label" for="aficiones"> Deportes </label>
 					</div>
@@ -149,7 +149,7 @@
 							class="form-check-input"
 							id="aficiones"
 							value="Cine"
-							onblur="validarCheckbox('aficiones', 'info_aficiones')"
+							onchange="validarCheckbox('aficiones', 'info_aficiones')"
 						/>
 						<label class="form-check-label" for="aficiones"> Cine </label>
 					</div>
@@ -160,7 +160,7 @@
 							class="form-check-input"
 							id="aficiones"
 							value="Lectura"
-							onblur="validarCheckbox('aficiones', 'info_aficiones')"
+							onchange="validarCheckbox('aficiones', 'info_aficiones')"
 						/>
 						<label class="form-check-label" for="aficiones"> Lectura </label>
 					</div>
@@ -176,7 +176,7 @@
 								name="sexo"
 								id="sexo"
 								value="varon"
-								onblur="validarRadioButton('sexo', 'info_sexo')"
+								onchange="validarRadioButton('sexo', 'info_sexo')"
 							/>
 							<label class="form-check-label" for="sexo"> Varón </label>
 						</div>
@@ -187,7 +187,7 @@
 								name="sexo"
 								id="sexo"
 								value="mujer"
-								onblur="validarRadioButton('sexo', 'info_sexo')"
+								onchange="validarRadioButton('sexo', 'info_sexo')"
 							/>
 							<label class="form-check-label" for="sexo"> Mujer </label>
 						</div>
@@ -198,7 +198,7 @@
 								name="sexo"
 								id="sexo"
 								value="otro"
-								onblur="validarRadioButton('sexo', 'info_sexo')"
+								onchange="validarRadioButton('sexo', 'info_sexo')"
 							/>
 							<label class="form-check-label" for="sexo"> Otro </label>
 						</div>
@@ -209,7 +209,7 @@
 								name="sexo"
 								id="sexo"
 								value="pnd"
-								onblur="validarRadioButton('sexo', 'info_sexo')"
+								onchange="validarRadioButton('sexo', 'info_sexo')"
 							/>
 							<label class="form-check-label" for="sexo"> Prefiero no decirlo </label>
 						</div>
